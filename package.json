@@ -1,6 +1,6 @@
 {
     "name": "webpack-react-lib",
-    "version": "1.0.9",
+    "version": "1.0.11",
     "description": "Publish npm package and use it in react app",
     "main": "dist/main.js",
     "scripts": {

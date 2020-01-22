@@ -8,7 +8,7 @@ class FormContainer extends Component {
   constructor() {
     super();
     this.state = {
-      seo_title: "sexy--"
+      seo_title: "..."
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -18,7 +18,7 @@ class FormContainer extends Component {
   render() {
     const { seo_title } = this.state;
     return (
-     
+
       <div id="article-form">
         <Input
           text="Search form  title"
@@ -28,7 +28,7 @@ class FormContainer extends Component {
           value={seo_title}
           handleChange={this.handleChange}
         />
-         123<Heart />432
+        Good day! <b /><Heart />
       </div>
     );
   }
