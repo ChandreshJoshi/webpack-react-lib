@@ -4,10 +4,10 @@ module.exports = {
     // output: {
     //     path: __dirname + 'dist',
     //     filename: 'main.js',
-        // resolve: {
-        //     extensions: ['.js', '.jsx']
-        // },
-        // libraryTarget: 'commonjs2'
+    // resolve: {
+    //     extensions: ['.js', '.jsx']
+    // },
+    // libraryTarget: 'commonjs2'
     // },
     module: {
         rules: [
@@ -29,16 +29,32 @@ module.exports = {
         ]
         //,
         // loaders: [
-        //     {
-        //       test: /\.jsx?$/,
-        //       loader: 'babel',
-        //       exclude: /node_modules/,
-        //       query: {
-        //         cacheDirectory: true,
-        //         presets: ['react', 'es2015']
-        //       }
-        //     }
-        //   ]
+            //     {
+            //       test: /\.jsx?$/,
+            //       loader: 'babel',
+            //       exclude: /node_modules/,
+            //       query: {
+            //         cacheDirectory: true,
+            //         presets: ['react', 'es2015']
+            //       }
+            //     }
+
+
+            // Recently Babel 6 was released and there was a major change: https://babeljs.io/blog/2015/10/29/6.0.0
+            // {
+            //     test: /\.jsx?$/,
+            //     exclude: /node_modules/,
+            //     use: [
+            //       {
+            //         loader: 'babel-loader',
+            //         options: {
+            //           presets: ['react']
+            //         }
+            //       }
+            //     ],
+            //   }
+
+        // ]
     },
     plugins: [
         new HtmlWebPackPlugin({
